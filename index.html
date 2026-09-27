@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>July的知识库</title>
+  <meta name="description" content="July 的本地个人知识库：文章、笔记与代码。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#/home" aria-label="返回首页"><span class="brand-mark">J</span><span>July的知识库</span></a>
+      <div class="top-actions">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索内容、标签或代码…" /></label>
+        <button class="icon-btn" id="themeBtn" title="切换主题" aria-label="切换主题">◐</button>
+        <button class="avatar-btn" id="avatarBtn" title="上传头像"><img id="avatarImage" alt="头像" /><span id="avatarFallback">J</span></button>
+        <input id="avatarInput" type="file" accept="image/*" hidden />
+      </div>
+    </header>
+    <main id="app" class="main-grid"></main>
+    <footer class="footer"><span>July的知识库 · 只保存在这台电脑上</span><span id="storageStatus">本地保存已开启</span></footer>
+  </div>
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
